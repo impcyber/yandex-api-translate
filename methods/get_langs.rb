@@ -1,21 +1,19 @@
 module Methods
-	class GetLangs
-  def self.run(api_key)
-	Api.post(
+class GetLangs
+	def self.run(api_key)
+		Api.post(
 		path,
 		{
-    	 key: api_key,
-    	 format: 'json'
+			key: api_key,
+			format: 'json'
 		}
-	)
-  end
+		)
+	end
 
- private
+private
 
-  def self.path
-    '/api/v1.5/tr.json/getLangs'
-  end
- end
+	def self.path
+		'/api/v1.5/tr.json/getLangs'
+		end
+	end
 end
-
-

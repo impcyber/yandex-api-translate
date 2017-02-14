@@ -1,22 +1,20 @@
 module Methods
-	class DetectLangs
-  def self.run(api_key, text)
-	Api.post(
+class DetectLangs
+	def self.run(api_key, text)
+		Api.post(
 		path,
 		{
-    	 key: api_key,
-		 text: text,
-		 format: 'json'
+			key: api_key,
+			text: text,
+			format: 'json'
 		}
-	)
-  end
+		)
+	end
 
- private
+private
 
-  def self.path
-    '/api/v1.5/tr.json/detect'
-  end
- end
+	def self.path
+		'/api/v1.5/tr.json/detect'
+		end
+	end
 end
-
-
