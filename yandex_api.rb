@@ -1,6 +1,6 @@
 require './api'
 
-Dir["./methods/*.rb"].each { |file| require file } # Hack from githab
+Dir["./methods/*.rb"].each { |file| require file } # Hack from github
 
 class YandexApiTranslate
 
